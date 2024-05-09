@@ -1,0 +1,13 @@
+Algoritmo
+
+1 - Receber uma string, variável orig;
+2 - Criar outras variáveis tam e inver;
+3.1 - Verificar se a entrada de fato é uma string;
+3.2 - A verificação da entrada como string é um loop com if, if para verificar se é um número do tipo float, caso não seja o código continua caso seja o usuário do programa recebe uma mensagem
+    inserir corretamente a string e logo em seguida um inputbox();
+4.1 - Usar uma técnica de inverter os caracteres;
+4.2 - Armazenar o tamanho da string em uma variável, tam;
+4.3 - Fazer um loop de 1 a 8 (usando While), cuja variável x vai de tam a 1;
+4.4 - Pegar o valor da posição tam e colocar na posição (tam - (tam-1));
+5 - Armazenar, concatenando em uma lista (append), a nova string;
+6 - Verificar se a string invertida é igual a string original;
