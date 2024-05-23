@@ -1,1 +1,10 @@
+# Função para várias variáveis
 
+def hipotenusa_quadrado(a,b):
+    c = a**2 + b**2
+    return print(c)
+
+a = 904
+b = 944
+
+hipotenusa_quadrado(a,b)
