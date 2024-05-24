@@ -1,0 +1,41 @@
+# Given: A string s
+# of length at most 200 letters and four integers a
+# , b
+# , c
+# and d
+# .
+#
+# Return: The slice of this string from indices a
+# through b
+# and c
+# through d
+# (with space in between), inclusively. In other words, we should include elements s[b]
+# and s[d]
+# in our slice.
+
+def divisor_de_strings():
+    cadeia = str(input("Insira uma cadeia de caracteres com no máximo 200 caracteres: "))
+
+    cortes = list(str(input("Insira, com espaço, os índices de corte: ")).split())
+    counter = 0
+    for i in cortes:
+        if i==" ":
+            counter+=1
+        else:
+            continue
+
+    for i in range(counter):
+        cortes.remove(" ")
+    if len(cortes)>=5:
+        print("Insira menos números de corte")
+    else:
+        a = int(cortes[0])
+        b = int(cortes[1])
+        c = int(cortes[2])
+        d = int(cortes[3])
+        if (a>b) or (b>c) or (c>d):
+            print("Números devem seguir uma sequência crescente")
+        else:
+            return print(cadeia[a:b+1],cadeia[c:d+1])
+
+divisor_de_strings()
