@@ -1,0 +1,29 @@
+# Given: Two positive integers a
+# and b
+# (a<b<10000
+# ).
+#
+# Return: The sum of all odd integers from a
+# through b
+# , inclusively.
+
+def somar_impares():
+    a = input("Insira um número inteiro positivo: ")
+    b = input("Insira um segundo número inteiro positivo: ")
+
+    soma = 0
+
+    try:
+        a = int(a)
+        b = int(b)
+        if a > b:
+            print("O primeiro número deve ser menor do que o segundo!")
+        else:
+            for i in range(a, b + 1):
+                if (i % 2) != 0:
+                    soma += i
+            print(soma)
+    except:
+        print("Insira apenas números")
+
+somar_impares()
